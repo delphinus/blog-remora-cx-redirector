@@ -7,7 +7,7 @@ app.get(/.*/, (req, res) => {
   console.log(`Hello world received a request.: ${req.ip}`);
 
   const url = `https://${domain}${req.originalUrl}`;
-  res.redirect(url);
+  res.redirect(301, url);
 });
 
 const port = process.env.PORT || 8080;
