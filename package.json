@@ -1,0 +1,19 @@
+{
+  "name": "blog-remora-cx-redirector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delphinus/blog-remora-cx-redirector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delphinus/blog-remora-cx-redirector/issues"
+  },
+  "homepage": "https://github.com/delphinus/blog-remora-cx-redirector#readme"
+}
