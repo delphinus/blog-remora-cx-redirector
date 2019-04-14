@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "build-image": "gcloud builds submit --tag gcr.io/blog-remora-cx/blog-remora-cx-redirector",
+    "deploy": "gcloud beta run deploy --image gcr.io/blog-remora-cx/blog-remora-cx-redirector",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
