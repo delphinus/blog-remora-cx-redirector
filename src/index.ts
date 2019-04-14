@@ -1,12 +1,13 @@
 import express from "express";
+import { domain } from "./setting.json";
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get(/.*/, (req, res) => {
   console.log(`Hello world received a request.: ${req.ip}`);
 
-  const target = process.env.TARGET || "World";
-  res.send(`Hwllo ${target}`);
+  const url = `https://${domain}${req.originalUrl}`;
+  res.redirect(url);
 });
 
 const port = process.env.PORT || 8080;
